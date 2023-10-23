@@ -1,0 +1,60 @@
+Two contracts to deploy: MerkleFactory & KittieNFT
+
+- On both versions of ClaimKitty, update the fee paid in WEth to 20000000000000000 Wei, as it is currently incorrect.
+v2- done [MerkleFactory > creatorFee]
+
+
+- Change NFT Type 1 Discount from 100% to 98%
+[While Deploying => KittieNFT]
+
+=> For nft type1:
+Discount: 98%
+cost: 0.03 ETH
+maxSupply: 10000
+Name: Bastepaat
+Symbol: BAST
+baseUri: https://api.kitties.com/kitties/
+
+
+=> For NFT type 2:
+Discount: 60%
+cost: 0.015 ETH
+maxSupply: 20000
+Name: Mafdet
+Symbol: BAST
+baseUri: https://api.kitties.com/kitties/
+
+
+=> For NFT type 3:
+Discount: 30%
+cost: 0.005 ETH
+maxSupply: 20000
+Name: Shumose
+Symbol: BAST
+baseUri: https://api.kitties.com/kitties/
+
+
+
+- Redeploy V1 and V2 with the updated Weth fee and connect the smart contracts to the front-end.
+validator address - 0x0624F128556552Fb1dACdd33E225443A08Ad6128
+ownership address - 0x3EbE9fDe950b8935B13856e3A814c7E938E84bB9
+Fee address - 0x29098cb178A7dF6E6124a399Df6859e1418FaCA6
+
+- NFT collection on arbitrum and the merkle contract + FE of V2 on avax to see if the deployment of validator has been successfully done.
+
+-  add a popup that is shown if a user tries to claim the free-nft on list1 or list2 out of the timebounds (25 December 2023 - 25 June 2024  ------ 26 June 2024 – 26 December 2024 ) and say something like: The elegible address will be able to claim their free NFT during these timebounds and tell the datetimes) 
+
+- Properly deploy all the back-end and infrastructure related to V2.
+
+
+Chains to Deploy: 
+Ethereum 
+Arbitrum 
+Avalanche 
+BSC 
+Matic/Polygon 
+Moonriver 
+Optimism 
+Cronos 
+Fantom
+Goerli – (Must be present on both V1 and V2 on a separated front-end and domain, not in the dropdown menu)
